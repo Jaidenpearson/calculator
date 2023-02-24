@@ -4,12 +4,28 @@ body {
     align-items: center;
     padding: 50px;
     margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(80, 82, 81);
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all .2s ease-in-out;
+    border-radius: 8px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: rgb(202, 143, 179);
+
 }
 
 #calcContainer {
-    padding: 30px;
-    background-color: black;
+    padding: 16px;
+    background-color: rgb(202, 143, 179);
     border-radius: 5px;
+    box-shadow: 4px 4px 40px rgb(77, 136, 116);
 }
 
 #mainContainer {
@@ -17,7 +33,9 @@ body {
     grid-template-columns: auto auto auto auto;
     width: 600px;
     height: 700px;
-    background-color: rgb(9, 117, 121);
+    padding: 4px;
+    background-color: rgb(77, 136, 116);
+    border-width: 4px;
     border-radius: 5px;
     column-gap: 4px;
     row-gap: 4px;
@@ -28,16 +46,24 @@ body {
     grid-column-end: 3;
 }
 
-#equals {
+#del {
     grid-column-start: 3;
     grid-column-end: 5;
 }
 
-#answer {
+#answerContainer {
     grid-column-start: 1;
     grid-column-end: 5;
+    height: 40px;
+    
+}
+
+#answerDisplay {
+    padding-top: 100px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     display: flex;
-    justify-content: end;
     align-items: flex-end;
-    flex-direction: column;
+    justify-content: flex-end;
+    font-size: large;
 }
